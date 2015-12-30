@@ -22,3 +22,15 @@ Make sure:
 
 
 
+
+
+
+                            SPECIAL THANKS TO:
+                         | R9, Vini_Nazi, VXHeaven|
+                   _____ | St0rm, Glac, Kr0n0$,Pix|_____
+                         | Leey, J-Astolfo, Murdok|
+                         | DoSNUT, InurlBrasil    |
+                         | Jh00n, BakuninM4lvadao |
+
+
+
