@@ -3,8 +3,8 @@
 Where the c4 remote administration tool, c4_RAT, is being built!
 
 The c4_RAT is a remote administration tool, for computers running Windows, only, totally written in python.
-It works via the upload of the received data to a ftp server.
-The code is quite simple and it is not definitely finished yet; you can propose suggestions if you want!
+It works via the upload of received data to a ftp server.
+The code is quite simple and it is not definitely finished, yet; you can propose suggestions if you want!
 
 Hope you like it! :)
 
