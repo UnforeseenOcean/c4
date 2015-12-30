@@ -42,4 +42,4 @@ Make sure:
 
 
 
-Official icon: http://i.imgur.com/4NxLDur.png?1
+Official icon: http://i.imgur.com/4NxLDur.png
