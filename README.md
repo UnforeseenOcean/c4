@@ -22,7 +22,7 @@ Make sure:
 - Your python path is C:\Python27;
 - Your pyinstaller path is C:\Python27\PyInstaller-2.1, even if you are not using this version;
 - You are running the program as an administrator;
-- You've got all the modules required on your computer;
+- You've got all the required modules on your computer;
 - You are using it with the AUTHORIZATION and the AWARENESS of the computer's owner;
 - You are specifying all the paths, can be done with --paths=, while compiling the code with pyinstaller.
 
