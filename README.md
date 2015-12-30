@@ -1,13 +1,24 @@
 # c4
 
-Where the c4 remote administration tool is being built!
+Where the c4 remote administration tool, c4_RAT, is being built!
 
-The c4 RAT is a remote administration tool totally written in python.
+The c4_RAT is a remote administration tool, for computers running Windows, only, totally written in python.
 It works via the upload of the received data to a ftp server.
 The code is quite simple and it is not definitely finished yet; you can propose suggestions if you want!
 
 Hope you like it! :)
 
-Mor-rask (cr4sh3r)
+Mor-rask - (cr4sh3r)
+
+
+Some technical issues: 
+Make sure:
+- Your python path is C:\Python27;
+- Your pyinstaller path is C:\Python27\PyInstaller-2.1, even if you are not using this version;
+- You are running the program as an administrator;
+- You've got all the modules required on your computer;
+- You are using it with the AUTHORIZATION and the AWARENESS of the computer's owner;
+- You are specifying all the paths, can be done with --paths=, while compiling the code with pyinstaller.
+
 
 
