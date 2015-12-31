@@ -187,12 +187,12 @@ cr4sh3r  |     \#Y         |
 
 art9 = """
                            SPECIAL THANKS TO:
-                         | R9, Vini_Nazi, VXHeaven|
-                   _____ | St0rm, Glac, Kr0n0$,Pix|_____
-                         | Leey, J-Astolfo, Murdok|
-                   _____ | DoSNUT, InurlBrasil    |_____
-                         | Jh00n, BakuninM4lvadao |
-                         | Kane, Xandi, Kurono    |
+                         | R9, Vini_Nazi, VXHeaven, Pix|
+                   _____ | St0rm, Glac, Kr0n0$, Leey   |_____
+                         | InurlBrasil, J-Astolfo, Kane|
+                   _____ | DoSNUT,Murdok,Booster,Kurono|_____
+                         | Jh00n,BakuninM4lvadao, Xandi|
+                  
 
                          """
 
