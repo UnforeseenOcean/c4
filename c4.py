@@ -190,8 +190,9 @@ art9 = """
                          | R9, Vini_Nazi, VXHeaven|
                    _____ | St0rm, Glac, Kr0n0$,Pix|_____
                          | Leey, J-Astolfo, Murdok|
-                         | DoSNUT, InurlBrasil    |
+                   _____ | DoSNUT, InurlBrasil    |_____
                          | Jh00n, BakuninM4lvadao |
+                         | Kane, Xandi, Kurono    |
 
                          """
 
