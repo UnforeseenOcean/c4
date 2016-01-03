@@ -32,14 +32,12 @@ Make sure:
 
 
 
-
-                            SPECIAL THANKS TO:
-                         | R9, Vini_Nazi, VXHeaven|
-                   _____ | St0rm, Glac, Kr0n0$,Pix|_____
-                         | Leey, J-Astolfo, Murdok|
-                         | DoSNUT, InurlBrasil    |
-                         | Jh00n, BakuninM4lvadao |
-
+                                SPECIAL THANKS TO:
+                         | R9, Vini_Nazi, VXHeaven, Pix|
+                   _____ | St0rm, Glac, Kr0n0$, Leey   |_____
+                         | InurlBrasil, J-Astolfo, Kane|
+                   _____ | DoSNUT,Murdok,Booster,Kurono|_____
+                         | Jh00n,BakuninM4lvadao, Xandi|
 
 
 Official icon: http://i.imgur.com/4NxLDur.png
