@@ -217,7 +217,7 @@ artfin = random.choice([art1,art2,art3,art4,art5,art6,art7,art8,art9,art10])
 
 print artfin
 print " "
-print "Version 1.0.0"
+print "Version 1.0.1"
 print "- - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 print "Made by cr4sh3r"
 print "This may be not the final version!"
