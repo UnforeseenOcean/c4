@@ -41,3 +41,5 @@ Make sure:
 
 
 Official icon: http://i.imgur.com/4NxLDur.png
+
+Official channel: https://www.youtube.com/channel/UCExUpYP68VXRoROMJG9jeCg
