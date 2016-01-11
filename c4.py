@@ -217,7 +217,7 @@ artfin = random.choice([art1,art2,art3,art4,art5,art6,art7,art8,art9,art10])
 
 print artfin
 print " "
-print "Version 1.0.2"
+print "Version 1.0.3"
 print "- - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 print "Made by cr4sh3r"
 print "This may be not the final version!"
@@ -280,10 +280,11 @@ quest = getpass.getuser()
 test = os.getcwd()
 filen = '\\\"' + sys.argv[0] + '\\\"'
 start =  "\\\"C:\Users" + '\\\\' + quest + "\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\\\\\\""
+start2889 =  "C:\Users"  + "\\\\" + quest + "\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 test2 = os.getcwd()
 
 
-if test2 == start:
+if test2 == start2889:
      ctypes.windll.user32.MessageBoxA(0, "ERROR 49, ERROR!", "ERROR!", 1)
 
 else:
@@ -601,4 +602,3 @@ while 1 >= kfckl :
 
 
 # Preserve the main author if you're going to change the code
-
