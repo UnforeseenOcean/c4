@@ -228,7 +228,7 @@ print "Made by cr4sh3r"
 print "This may be not the final version!"
 
 print "USE ME CORRECTLY! " \
-      "ILEGAL ACTIONS HAVE THEIR CONSEQUENCES!"
+      "ILLEGAL ACTIONS HAVE THEIR CONSEQUENCES!"
 print "- - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 
 print "Choose an option:"
