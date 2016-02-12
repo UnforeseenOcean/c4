@@ -27,7 +27,7 @@ Make sure:
 - You are specifying all the paths, can be done with --paths=, while compiling the code with pyinstaller.
  
 
-
+# The graphical interface for the controller is available (c4_rat-v2.0)
 
 
 
