@@ -17,7 +17,7 @@ Mor-rask - (cr4sh3r)
 
 Some technical issues (they may occur) : 
 
-Make sure:
+* Make sure:
 
 - You've got python 2.7 installed;
 - You are running the program as an administrator;
