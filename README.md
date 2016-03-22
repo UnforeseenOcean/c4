@@ -15,12 +15,11 @@ Hope you like it! :)
 Mor-rask - (cr4sh3r)
 
 
-Some technical issues: 
+Some technical issues (they may occur) : 
 
 Make sure:
 
-- Your python path is C:\Python27;
-- Your pyinstaller path is C:\Python27\PyInstaller-2.1, even if you are not using this version;
+- You've got python 2.7 installed;
 - You are running the program as an administrator;
 - You've got all the required modules on your computer;
 - You are using it with the AUTHORIZATION and the AWARENESS of the computer's owner;
@@ -43,5 +42,5 @@ Official icon: http://i.imgur.com/4NxLDur.png
 Official channel: https://www.youtube.com/channel/UCExUpYP68VXRoROMJG9jeCg
 
 
-# The graphical interface for the controller is available (c4_rat-v2.0)
+# The graphical interface for the controller is available (c4_rat-v2.1)
 
