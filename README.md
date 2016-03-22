@@ -40,6 +40,8 @@ Make sure:
                    _____ | DoSNUT,Murdok,Booster,Kurono|_____
                          | Jh00n,BakuninM4lvadao, Xandi|
 
+The command line version was,temporarily, discontinued...
+
 
 Official icon: http://i.imgur.com/4NxLDur.png
 
@@ -47,4 +49,6 @@ Official channel: https://www.youtube.com/channel/UCExUpYP68VXRoROMJG9jeCg
 
 
 # The graphical interface is now available! (c4_rat-v2.1)
+
+
 
