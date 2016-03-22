@@ -46,5 +46,5 @@ Official icon: http://i.imgur.com/4NxLDur.png
 Official channel: https://www.youtube.com/channel/UCExUpYP68VXRoROMJG9jeCg
 
 
-# The graphical interface for the controller is available (c4_rat-v2.1)
+# The graphical interface is now available! (c4_rat-v2.1)
 
