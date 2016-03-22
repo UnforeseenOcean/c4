@@ -19,7 +19,7 @@ Some technical issues (they may occur) :
 
 Make sure:
 
-- You've got python 2.7 installed;
+- You've got python 2.7 installed - (The computer which will be controlled won't need it!);
 
 - You are running the program as an administrator;
 
